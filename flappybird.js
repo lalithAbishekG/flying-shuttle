@@ -56,6 +56,18 @@ window.onload = function() {
 
     requestAnimationFrame(update);
     setInterval(placePipes, 3500);
+
+    // Add a touch event listener to the canvas
+    board.addEventListener("touc    hstart", () => {
+        velocityY = -6;
+
+        if (gameOver) {
+            bird.y = birdY;
+            pipeArray = [];
+            score = 0;
+            gameOver = false;
+        }
+    });
     document.addEventListener("keydown", moveBird);
 }
 
@@ -140,7 +152,6 @@ function placePipes() {
 
 function moveBird(e) {
     if (e.code == "Space" || e.code == "ArrowUp" || e.code == "KeyX") {
-       
         velocityY = -6;
 
       
