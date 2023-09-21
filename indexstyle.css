@@ -1,0 +1,37 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    justify-content: space-between;
+    font-size: small;
+    background-color: rgb(0, 0, 0);   
+}
+
+#board {
+    /* background-color: skyblue; */
+    background-image: url("./Flyingshuttlebg.png");
+    border-radius: 12px;
+    padding: 12px 12px ;
+    padding-top: 12px;
+    box-shadow: 12px;
+    margin-top: 20px;
+}
+.name h2{
+display: flex;
+justify-content: space-evenly;
+color: rgb(20, 2, 92);
+font-weight: 1000;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+  }
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: azure;
+  }
